@@ -8,7 +8,7 @@ provider "azurerm" {
 ##-----------------------------------------------------------------------------
 module "resource_group" {
   source      = "terraform-az-modules/resource-group/azure"
-  version     = "1.0.0"
+  version     = "1.0.1"
   name        = "app"
   environment = "dev"
   location    = "eastus"
