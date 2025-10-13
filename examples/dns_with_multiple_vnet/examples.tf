@@ -8,7 +8,7 @@ provider "azurerm" {
 ##-----------------------------------------------------------------------------
 module "resource_group" {
   source      = "terraform-az-modules/resource-group/azure"
-  version     = "1.0.0"
+  version     = "1.0.1"
   name        = "app"
   environment = "uat"
   location    = "eastus"
@@ -21,7 +21,7 @@ module "resource_group" {
 module "vnet1" {
   depends_on          = [module.resource_group]
   source              = "terraform-az-modules/vnet/azure"
-  version             = "1.0.0"
+  version             = "1.0.1"
   name                = "app1"
   environment         = "uat"
   resource_group_name = module.resource_group.resource_group_name
@@ -35,7 +35,7 @@ module "vnet1" {
 module "vnet2" {
   depends_on          = [module.resource_group]
   source              = "terraform-az-modules/vnet/azure"
-  version             = "1.0.0"
+  version             = "1.0.1"
   name                = "app2"
   environment         = "uat"
   resource_group_name = module.resource_group.resource_group_name
