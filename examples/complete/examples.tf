@@ -79,4 +79,4 @@ module "private_dns" {
   location    = module.resource_group.resource_group_location
   name        = "dns"
   environment = "dev"
-} 
+}
