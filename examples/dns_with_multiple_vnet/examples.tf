@@ -7,8 +7,8 @@ provider "azurerm" {
 ## Resource group in which all resources will be deployed.
 ##-----------------------------------------------------------------------------
 module "resource_group" {
-  source      = "terraform-az-modules/resource-group/azure"
-  version     = "1.0.0"
+  source      = "terraform-az-modules/resource-group/azurerm"
+  version     = "1.0.3"
   name        = "app"
   environment = "uat"
   location    = "eastus"
@@ -20,8 +20,8 @@ module "resource_group" {
 ##-----------------------------------------------------------------------------
 module "vnet1" {
   depends_on          = [module.resource_group]
-  source              = "terraform-az-modules/vnet/azure"
-  version             = "1.0.0"
+  source              = "terraform-az-modules/vnet/azurerm"
+  version             = "1.0.3"
   name                = "app1"
   environment         = "uat"
   resource_group_name = module.resource_group.resource_group_name
@@ -34,8 +34,8 @@ module "vnet1" {
 ##-----------------------------------------------------------------------------
 module "vnet2" {
   depends_on          = [module.resource_group]
-  source              = "terraform-az-modules/vnet/azure"
-  version             = "1.0.0"
+  source              = "terraform-az-modules/vnet/azurerm"
+  version             = "1.0.3"
   name                = "app2"
   environment         = "uat"
   resource_group_name = module.resource_group.resource_group_name
