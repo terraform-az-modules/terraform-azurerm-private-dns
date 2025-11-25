@@ -33,3 +33,9 @@ output "custom_dns_zone_names" {
     if try(cfg.zone_name, null) != null
   }
 }
+
+output "this_id" {
+  description = "The resource ID"
+  value       = azurerm_private_dns_zone.this.id
+}
+
