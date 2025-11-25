@@ -33,3 +33,9 @@ output "custom_dns_zone_names" {
     if try(cfg.zone_name, null) != null
   }
 }
+
+output "this_ids" {
+  description = "Map of resource ID"
+  value       = { for k, v in azurerm_private_dns_zone.this : k => v.id }
+}
+
