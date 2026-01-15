@@ -14,6 +14,7 @@ locals {
     cosmos_db_cassandra       = "privatelink.cassandra.cosmos.azure.com"
     cosmos_db_gremlin         = "privatelink.gremlin.cosmos.azure.com"
     cosmos_db_table           = "privatelink.table.cosmos.azure.com"
+    cosmos_db_postgresql      = "privatelink.postgres.cosmos.azure.com"
     synapse_analytics         = "privatelink.sql.azuresynapse.net"
     event_hub                 = "privatelink.servicebus.windows.net"
     service_bus               = "privatelink.servicebus.windows.net"
