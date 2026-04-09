@@ -1,13 +1,16 @@
-name: Terraform plan Difference
+name: Terraform Plan PR Diff
+
 on:
   pull_request:
     branches:
       - master
+    paths:
+      - 'examples/complete/**'
 
 jobs:
   complete-example:
     if: github.actor != 'dependabot[bot]'
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-pr-checks.yaml@master
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-diff-checks.yml@v2
     with:
       provider: 'azurerm'
       terraform_directory: 'examples/complete'
@@ -18,7 +21,7 @@ jobs:
 
   custom-dns-example:
     if: github.actor != 'dependabot[bot]'
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-pr-checks.yaml@master
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-diff-checks.yml@v2
     with:
       provider: 'azurerm'
       terraform_directory: 'examples/custom_dns'
@@ -29,7 +32,7 @@ jobs:
 
   dns-with-multiple-vnet-example:
     if: github.actor != 'dependabot[bot]'
-    uses: clouddrove/github-shared-workflows/.github/workflows/tf-pr-checks.yaml@master
+    uses: clouddrove/github-shared-workflows/.github/workflows/tf-diff-checks.yml@v2
     with:
       provider: 'azurerm'
       terraform_directory: 'examples/dns_with_multiple_vnet'
