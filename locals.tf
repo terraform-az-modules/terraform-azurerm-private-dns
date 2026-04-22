@@ -45,6 +45,7 @@ locals {
     azure_iot_hub             = "privatelink.azure-devices.net"
     azure_digital_twins       = "privatelink.digitaltwins.azure.net"
     azure_video_indexer       = "privatelink.api.videoindexer.ai"
+    azure_managed_redis       = "privatelink.redis.azure.net"
     # Catch-all for custom DNS zones
     custom_dns = null
   }
