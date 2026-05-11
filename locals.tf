@@ -19,6 +19,8 @@ locals {
     event_hub                 = "privatelink.servicebus.windows.net"
     service_bus               = "privatelink.servicebus.windows.net"
     azure_ai_services         = "privatelink.cognitiveservices.azure.com"
+    azure_openai              = "privatelink.openai.azure.com"
+    azure_ai_foundry          = "privatelink.services.ai.azure.com"
     azure_file                = "privatelink.file.core.windows.net"
     azure_data_lake           = "privatelink.dfs.core.windows.net"
     azure_monitor             = "privatelink.monitor.azure.com"
