@@ -141,4 +141,8 @@ locals {
     ]
   ])
 
+  dns_zone_id_map = {
+    for key, zone in azurerm_private_dns_zone.this : zone.name => zone.id
+  }
+
 }
