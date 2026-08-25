@@ -1,4 +1,12 @@
 
+## [v1.0.8] - 2026-08-25
+### :bug: Bug Fixes
+- [`0a33e41`](https://github.com/terraform-az-modules/terraform-azurerm-private-dns/commit/0a33e41a60f73059d6163abe58b2052bb6722c77) - updated rg and zone name to dns zone id  *(PR [#46](https://github.com/terraform-az-modules/terraform-azurerm-private-dns/pull/46) by [@karan-cd](https://github.com/karan-cd))*
+
+### :wrench: Chores
+- [`5a0efae`](https://github.com/terraform-az-modules/terraform-azurerm-private-dns/commit/5a0efae268588b7a0ff173f0116427dcc90568b2) - **deps**: bump actions/checkout from 6 to 7 *(commit by [@dependabot[bot]](https://github.com/apps/dependabot))*
+
+
 ## [1.0.4] - 2026-01-15
 ### :bug: Bug Fixes
 - [`1b344b5`](https://github.com/terraform-az-modules/terraform-azurerm-private-dns/commit/1b344b5e51e065b05600cd7e5e6409fd9da241f6) - Added cosmos pgsql api dns zone logic *(PR [#27](https://github.com/terraform-az-modules/terraform-azurerm-private-dns/pull/27) by [@maharshi-cd](https://github.com/maharshi-cd))*
@@ -16,3 +24,4 @@
 
 [1.0.3]: https://github.com/terraform-az-modules/terraform-azurerm-private-dns/compare/1.0.2...1.0.3
 [1.0.4]: https://github.com/terraform-az-modules/terraform-azurerm-private-dns/compare/1.0.3...1.0.4
+[v1.0.8]: https://github.com/terraform-az-modules/terraform-azurerm-private-dns/compare/v1.0.7...v1.0.8
